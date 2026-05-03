@@ -1,11 +1,27 @@
-import networkx as nx
 
-# ================================================
+"""
+Nombre Completo: Guillermo Bautista Hernández
+Matricula : 2019712
+Fecha: 03 de mayo de 2026
+Materia : Investigacion de Operaciones - PIA
 # MODELO DE FLUJO MÁXIMO - LOGÍSTICA PORTUARIA
 # Tema: Ruta de máximo flujo para contenedores
 # Puerto de Manzanillo → Centros de Distribución
-# ================================================
 
+"Declaro que este trabajo es de mi autoria y ha sido desarrollado
+bajo los criterios de integridad academica de la FCFM"
+
+LIBRERIAS REQUERIDAS:
+- pip install networkx
+    - Otras formas de instalar networkx
+        python -m pip install networkx
+        python3 -m pip install networkx
+        pip3 install networkx
+        pip install --user networkx
+
+
+"""
+import networkx as nx
 # Crear el grafo dirigido
 G = nx.DiGraph()
 
@@ -67,6 +83,5 @@ for s in saturated:
     print("  •", s)
 
 
-print("\n¡Código ejecutado correctamente!")
 print("Flujo máximo encontrado: 8500 TEU/día")
 print("Cuellos de botella principales identificados.")
